@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jj_users",
+  "info": {
+    "singularName": "jj-user",
+    "pluralName": "jj-users",
+    "displayName": "jjUser",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_id": {
+      "type": "string"
+    },
+    "user_name": {
+      "type": "string"
+    },
+    "avatar_large": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "password": {
+      "type": "password"
+    },
+    "avatar_large2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "likes": {
+      "type": "enumeration",
+      "enum": [
+        "null"
+      ]
+    }
+  }
+}
