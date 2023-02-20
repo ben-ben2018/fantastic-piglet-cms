@@ -13,7 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "content": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": false
     },
     "title": {
       "type": "text"
@@ -23,9 +24,6 @@
     },
     "views": {
       "type": "integer"
-    },
-    "type": {
-      "type": "string"
     },
     "tags": {
       "type": "json",
@@ -42,6 +40,14 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::jj-user.jj-user"
+    },
+    "summary": {
+      "type": "text"
+    },
+    "tag": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tag.tag"
     }
   }
 }

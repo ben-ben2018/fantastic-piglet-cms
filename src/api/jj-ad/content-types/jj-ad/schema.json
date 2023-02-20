@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jj_ads",
+  "info": {
+    "singularName": "jj-ad",
+    "pluralName": "jj-ads",
+    "displayName": "JjAD"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "imgUrl": {
+      "type": "string"
+    }
+  }
+}
