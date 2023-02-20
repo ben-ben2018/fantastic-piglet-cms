@@ -48,6 +48,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::tag.tag"
+    },
+    "ad": {
+      "type": "boolean",
+      "default": false,
+      "required": false
     }
   }
 }
