@@ -4,7 +4,8 @@
   "info": {
     "singularName": "jj-content",
     "pluralName": "jj-contents",
-    "displayName": "JjContent"
+    "displayName": "JjContent",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,6 +14,34 @@
   "attributes": {
     "content": {
       "type": "richtext"
+    },
+    "title": {
+      "type": "text"
+    },
+    "like": {
+      "type": "integer"
+    },
+    "views": {
+      "type": "integer"
+    },
+    "type": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "json",
+      "required": true
+    },
+    "author_id": {
+      "type": "integer"
+    },
+    "hot": {
+      "type": "float",
+      "default": 0
+    },
+    "jj_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::jj-user.jj-user"
     }
   }
 }
