@@ -18,9 +18,6 @@
     "user_name": {
       "type": "string"
     },
-    "avatar_large": {
-      "type": "string"
-    },
     "email": {
       "type": "email"
     },
@@ -40,6 +37,15 @@
       "enum": [
         "null"
       ]
+    },
+    "author_list": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::author-list.author-list",
+      "inversedBy": "jj_users"
+    },
+    "position": {
+      "type": "string"
     }
   }
 }

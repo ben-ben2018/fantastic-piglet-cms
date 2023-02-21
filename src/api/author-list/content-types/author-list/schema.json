@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "author_lists",
+  "info": {
+    "singularName": "author-list",
+    "pluralName": "author-lists",
+    "displayName": "authorList"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "jj_users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::jj-user.jj-user",
+      "mappedBy": "author_list"
+    }
+  }
+}
